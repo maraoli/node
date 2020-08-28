@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 teste-1/test.js",
-    "draw": "mocha --reporter=nyan teste-1/test.js",
+    "test": "mocha -w --timeout 10000 teste-1/test.js",
+    "draw": "mocha -w --reporter=nyan teste-1/test.js",
     "dev": "nodemon  mocha/index.js"
   },
   "keywords": [],
