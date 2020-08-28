@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 mocha/test.js",
+    "test": "mocha --timeout 10000 teste-1/test.js",
     "dev": "nodemon  mocha/index.js"
   },
   "keywords": [],
