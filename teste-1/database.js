@@ -50,6 +50,29 @@ class Database {
         const dadosFiltrados = dados.filter(item =>(id ? (item.id === id): true))
         return dadosFiltrados
     }
+
+    async atualizar(id, modificacoes){
+        const dados = await this.obterDadosArquivo()
+        let indice = dados.findIndex(item => item.id === parseInt(id))
+        if(indice === -1){
+            throw Error('O heroi informado não existe')
+        }
+        const atual = dados[indice]
+        const objetoAtualizar = {
+            ...atual,
+            ...modificacoes
+        }
+        
+        while(indice !== -1){       
+            dados.splice(indice, 1)
+            indice = dados.findIndex(item => item.id === parseInt(id))     
+        }
+
+        return await this.escreverArquivo([
+            ...dados,
+            objetoAtualizar
+        ])
+    }
 }
 
 module.exports = new Database()
