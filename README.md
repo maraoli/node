@@ -42,6 +42,10 @@ node teste-1/index.js -l
 - Remove um heroi por id
 node teste-1/index.js -r -i 1598902318361
 
+- Atualizar Heroi
+node teste-1/index.js -a 1598902316414 -n Monica
+node teste-1/index.js -a 1598902316414 -p "São são"
+
 node teste-1/index.js -c -n Flash -p Speed
 node teste-1/index.js -c -n Aquaman -p Marinho
 ```
