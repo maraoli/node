@@ -24,3 +24,26 @@ Diminui o tempo de retorno nas requisições mas padroniza a entrada do request.
 ```
  it.only(...)
 ```
+
+### Commander/ COMANDOS:
+
+```
+node teste-1/index.js --help
+
+- Retorna a versão
+node teste-1/index.js -V
+
+- Solicita cadastro
+node teste-1/index.js -c
+
+- Lista os herois cadastrados
+node teste-1/index.js -l
+
+- Remove um heroi por id
+node teste-1/index.js -r -i 1598902318361
+
+node teste-1/index.js -c -n Flash -p Speed
+node teste-1/index.js -c -n Aquaman -p Marinho
+```
+
+Serve para criar opções de linha de comando.
