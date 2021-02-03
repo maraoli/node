@@ -1,3 +1,9 @@
+# Olá dev aventureiro!
+
+Neste respositório utilizamos o Commander
+para atualizar, remover e inserir usuários na
+nossa base de dados.
+
 
 ### Rodando Testes Mocha:
 
